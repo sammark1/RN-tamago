@@ -10,7 +10,11 @@ export default function App() {
 //REVIEW difference between Stack Navigator and other navigation options
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+      >
         <Stack.Screen 
         name="Welcome" 
         component={WelcomeScreen} 
@@ -19,6 +23,7 @@ export default function App() {
         <Stack.Screen 
         name="Game" 
         component={GameScreen} 
+        mode="modal"
         options={{ title: 'Game Screen' }}
         />
       </Stack.Navigator>

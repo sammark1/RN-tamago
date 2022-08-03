@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button, Text, View } from 'react-native';
+import {StyleSheet, Button, Text, View } from 'react-native';
 
 function WelcomeScreen(props) {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Welcome Screen</Text>
             <Button
             title="Go to Game"
@@ -14,5 +14,13 @@ function WelcomeScreen(props) {
         </View>
     );
 }
+
+const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        alignItems:'center',
+        justifyContent:'center',
+    }
+})
 
 export default WelcomeScreen;
