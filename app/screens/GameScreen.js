@@ -11,6 +11,12 @@ function GameScreen(props) {
                 props.navigation.navigate('Welcome')
             }
             />
+            <Button
+            title="Quit"
+            onPress={()=>
+                props.navigation.navigate('Title')
+            }
+            />
         </View>
     );
 }

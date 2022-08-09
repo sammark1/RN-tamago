@@ -2,6 +2,7 @@ import { NavigationContainer } from '@react-navigation/native';
 // import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import TitleScreen from './app/screens/TitleScreen';
 import GameScreen from './app/screens/GameScreen';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 
@@ -18,7 +19,8 @@ export default function App() {
         options={{
           title:"Title Screen",
           tabBarButton: ()=> null,
-          tabBarVisibile:false,
+          tabBarStyle:{display:'none'},
+          headerShown:false,
         }}
         />
         <Tab.Screen

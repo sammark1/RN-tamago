@@ -11,6 +11,12 @@ function WelcomeScreen(props) {
                 props.navigation.navigate('Game')
             }
             />
+            <Button
+            title="Quit"
+            onPress={()=>
+                props.navigation.navigate('Title')
+            }
+            />
         </View>
     );
 }
