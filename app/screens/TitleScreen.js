@@ -1,20 +1,14 @@
 import React from 'react';
 import {StyleSheet, Button, Text, View } from 'react-native';
 
-function GameScreen(props) {
+function WelcomeScreen(props) {
     return (
         <View style={styles.container}>
-            <Text>Game Screen</Text>
+            <Text>Title Screen</Text>
             <Button
             title="Go to Welcome"
             onPress={()=>
                 props.navigation.navigate('Welcome')
-            }
-            />
-            <Button
-            title="Quit"
-            onPress={()=>
-                props.navigation.navigate('Title')
             }
             />
         </View>
@@ -29,4 +23,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default GameScreen;
+export default WelcomeScreen;
